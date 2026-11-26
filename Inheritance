@@ -1,0 +1,32 @@
+class animal{
+  void eat()
+  {
+     System.out.println("Animals are eating");
+  }
+  void sleep()
+  {
+    System.out.println("Animals are sleep");
+  }
+}
+class dog extends animal
+{
+  void dss()
+  {
+    System.out.println("Dogs are sound");
+  }
+}
+
+public class Main{
+  public static void main(String[]args)
+  {
+    dog b=new dog();
+    b.eat();
+    b.dss();
+  }
+}
+
+                        /* Possible Object Creation Combinations
+                               Dog d = new Dog();	Valid
+                               Animal a = new Animal();	Valid
+                               Animal a = new Dog();	Valid
+                               Dog d = new Animal();	Invalid*/
