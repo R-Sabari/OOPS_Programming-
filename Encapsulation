@@ -1,0 +1,42 @@
+class bank{
+    private int balance=5000;
+    
+    public int getbalance()
+    {
+        return balance;
+    }
+
+    public void dep(int amount)
+    {
+        if(amount>0)
+        {
+            balance=balance+amount;
+            System.out.println("Amount withdraw suessfully");
+        }
+        else{
+            System.out.println("amount not having");
+        }
+    }
+
+    public void withdraw(int amount)
+    {
+        if (amount>0 && amount<=balance)
+        {
+            balance=balance-amount;
+            System.out.println("withdraw succesfully");
+        }
+        else{
+            System.out.println("not haveing byeee");
+        }
+    } 
+}
+
+public class Main{
+    public static void main(String[] args)
+    {
+        bank b=new bank();
+        b.withdraw(5850);
+        System.out.print("Final amount : "+b.getbalance());
+    }
+}
+
